@@ -1,0 +1,22 @@
+        -:    0:Source:cov.c
+        -:    0:Graph:cov.gcno
+        -:    0:Data:cov.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        -:    3:int main (int argc, char **argv)
+        -:    4:{
+        -:    5:  int i;
+        -:    6:
+        1:    7:  i = atoi(argv[1]);
+       20:    8:  for (; i < 10; i++)
+        -:    9:    {
+        9:   10:      if (i % 3 == 0)
+        3:   11:        printf ("%d is divisible by 3\n", i);
+        9:   12:      if (i % 11 == 0)
+    #####:   13:        printf ("%d is divisible by 11\n", i);
+        9:   14:    }
+        -:   15:
+        1:   16:  return 0;
+        -:   17:}
